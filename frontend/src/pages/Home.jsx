@@ -157,11 +157,6 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0097b2]/20 to-transparent"></div>
               </div>
-              {/* Floating Badge */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border-4 border-[#95F4D7]">
-                <div className="text-4xl font-bold text-[#0097b2]">10+</div>
-                <div className="text-sm text-gray-600 font-medium">Années d'expérience</div>
-              </div>
             </div>
           </div>
         </div>
