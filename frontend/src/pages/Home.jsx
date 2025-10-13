@@ -108,9 +108,9 @@ const Home = () => {
                 Réparation Éco-responsable
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 ReStore
-                <span className="block text-[#0097b2] mt-2">Réparation & Reconditionnement</span>
+                <span className="block text-[#0097b2] mt-2">Réparation &<br />Reconditionnement</span>
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
