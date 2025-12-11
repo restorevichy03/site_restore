@@ -54,13 +54,13 @@ const Home = () => {
       icon: Recycle,
       title: 'Rachat & Recyclage',
       description: 'Donnez une seconde vie à vos appareils. Nous rachetons et recyclons votre matériel.',
-      image: 'https://images.pexels.com/photos/6755174/pexels-photo-6755174.jpeg',
+      image: 'https://images.unsplash.com/photo-1673654885024-986fb87080f3',
     },
     {
       icon: Package,
       title: 'Vente d\'Accessoires',
-      description: 'Coques, chargeurs, protections d\'écran et bien plus pour protéger vos appareils.',
-      image: 'https://images.unsplash.com/photo-1746005847013-13291f371f0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxwaG9uZSUyMHJlcGFpciUyMHRlY2huaWNpYW58ZW58MHx8fHwxNzYwMzU4Mzc4fDA&ixlib=rb-4.1.0&q=85',
+      description: 'Coques, chargeurs, câbles, blocs secteur, verres trempés et bien plus pour protéger vos appareils.',
+      image: 'https://images.unsplash.com/photo-1594731804139-d70328c07f4a',
     },
   ];
 
