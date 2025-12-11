@@ -21,7 +21,7 @@ const Footer = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_d2a7eab4-9d0e-4e8c-953b-0296df2a175a/artifacts/k9nfafgu_ReSt%20Re%20-%202.png"
               alt="ReStore Logo"
-              className="h-24 w-auto mb-4"
+              className="h-[140px] w-auto mb-4"
             />
             <p className="text-gray-400 mb-4">
               Réparation, reconditionnement et vente de téléphones, ordinateurs, tablettes et consoles.
