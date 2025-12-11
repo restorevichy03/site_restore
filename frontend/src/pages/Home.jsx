@@ -72,7 +72,7 @@ const Home = () => {
     {
       icon: Package,
       title: 'Vente d\'Accessoires',
-      description: 'Coques, chargeurs, câbles, blocs secteur, verres trempés et bien plus pour protéger vos appareils.',
+      description: 'Protection d\'écran hydrogel, coques, chargeurs, câbles, blocs secteur et bien plus pour protéger vos appareils.',
       image: 'https://images.unsplash.com/photo-1594731804139-d70328c07f4a',
     },
   ];
