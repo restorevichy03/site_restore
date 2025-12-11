@@ -132,11 +132,15 @@ const Home = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="contact" smooth={true} duration={500} offset={-80}>
+                <a 
+                  href="https://fr.phonilab.app/generate-ticket-steps/restore-phone-03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button className="bg-[#0097b2] hover:bg-[#007a8f] text-white px-8 py-6 text-lg rounded-xl font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 w-full sm:w-auto">
-                    Réparer mon appareil
+                    Devis en ligne
                   </Button>
-                </Link>
+                </a>
                 <Button
                   variant="outline"
                   className="border-2 border-[#0097b2] text-[#0097b2] hover:bg-[#D5F7FF] px-8 py-6 text-lg rounded-xl font-semibold transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
