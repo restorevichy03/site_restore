@@ -90,8 +90,8 @@ const Home = () => {
     },
     {
       icon: Shield,
-      title: 'Techniciens Experts',
-      description: 'Notre équipe locale de techniciens formés assure un service professionnel et transparent.',
+      title: 'Microsoudure Expert',
+      description: 'Atelier de microsoudure à Saint-Étienne pour les réparations complexes et précises.',
     },
     {
       icon: Leaf,
