@@ -95,17 +95,30 @@ const Header = () => {
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <nav className="flex flex-col px-4 py-4 space-y-4">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                className="text-gray-700 font-medium hover:text-[#0097b2] cursor-pointer transition-colors duration-200 py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.name}
-              </Link>
+              link.external ? (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 font-medium hover:text-[#0097b2] cursor-pointer transition-colors duration-200 py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="text-gray-700 font-medium hover:text-[#0097b2] cursor-pointer transition-colors duration-200 py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
             <Button
               className="bg-[#0097b2] hover:bg-[#007a8f] text-white w-full py-3 rounded-lg font-medium transition-all duration-300"
