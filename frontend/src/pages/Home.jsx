@@ -105,6 +105,7 @@ const Home = () => {
     { icon: Monitor, name: 'Ordinateurs' },
     { icon: Tablet, name: 'Tablettes' },
     { icon: Gamepad2, name: 'Consoles' },
+    { icon: Wrench, name: 'Drones' },
   ];
 
   return (
