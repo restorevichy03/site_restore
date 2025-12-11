@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Smartphone, Monitor, Tablet, Gamepad2, Wrench, ShoppingBag, Recycle, Package, Award, Clock, Shield, Leaf, MapPin, Phone, Mail } from 'lucide-react';
+import { Smartphone, Monitor, Tablet, Gamepad2, Wrench, ShoppingBag, Recycle, Package, Award, Clock, Shield, Leaf, MapPin, Phone, Mail, FileText, Search } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
