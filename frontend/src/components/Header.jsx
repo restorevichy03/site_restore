@@ -34,7 +34,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
             <img
-              src="https://customer-assets.emergentagent.com/job_d2a7eab4-9d0e-4e8c-953b-0296df2a175a/artifacts/cmxtow5l_Design%20sans%20titre%20%282%29.png"
+              src="https://customer-assets.emergentagent.com/job_d2a7eab4-9d0e-4e8c-953b-0296df2a175a/artifacts/k9nfafgu_ReSt%20Re%20-%202.png"
               alt="ReStore Logo"
               className="h-12 w-auto transition-transform duration-300 hover:scale-105"
             />
