@@ -43,17 +43,30 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                className="text-gray-700 font-medium hover:text-[#0097b2] cursor-pointer transition-colors duration-200 relative group"
-              >
-                {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0097b2] transition-all duration-300 group-hover:w-full"></span>
-              </Link>
+              link.external ? (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 font-medium hover:text-[#0097b2] cursor-pointer transition-colors duration-200 relative group"
+                >
+                  {link.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0097b2] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="text-gray-700 font-medium hover:text-[#0097b2] cursor-pointer transition-colors duration-200 relative group"
+                >
+                  {link.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#0097b2] transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              )
             ))}
           </nav>
 
