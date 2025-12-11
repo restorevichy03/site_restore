@@ -71,15 +71,28 @@ async def create_status_check(input: StatusCheckCreate):
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
-    # Exclude MongoDB's _id field from the query results
-    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
-    
-    # Convert ISO string timestamps back to datetime objects
-    for check in status_checks:
-        if isinstance(check['timestamp'], str):
-            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
-    
-    return status_checks
+    status_checks = await db.status_checks.find().to_list(1000)
+    return [StatusCheck(**status_check) for status_check in status_checks]
+
+# Contact Message Routes
+@api_router.post("/contact", response_model=ContactMessage)
+async def create_contact_message(input: ContactMessageCreate):
+    contact_dict = input.dict()
+    contact_obj = ContactMessage(**contact_dict)
+    await db.contact_messages.insert_one(contact_obj.dict())
+    return contact_obj
+
+@api_router.get("/contact", response_model=List[ContactMessage])
+async def get_contact_messages():
+    messages = await db.contact_messages.find().sort("timestamp", -1).to_list(1000)
+    return [ContactMessage(**msg) for msg in messages]
+
+@api_router.get("/contact/{message_id}", response_model=ContactMessage)
+async def get_contact_message(message_id: str):
+    message = await db.contact_messages.find_one({"id": message_id})
+    if not message:
+        raise HTTPException(status_code=404, detail="Message not found")
+    return ContactMessage(**message)
 
 # Include the router in the main app
 app.include_router(api_router)
