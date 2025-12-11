@@ -127,7 +127,7 @@ const Home = () => {
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
-                Votre atelier de confiance à Vichy pour la réparation, le reconditionnement et la vente de téléphones, ordinateurs, tablettes et consoles de jeux.
+                Votre atelier de confiance à Vichy pour la réparation, le reconditionnement et la vente de téléphones, ordinateurs, tablettes, consoles de jeux et drones.
               </p>
 
               {/* Device Icons */}
