@@ -36,12 +36,7 @@ const Header = () => {
             <img
               src="https://customer-assets.emergentagent.com/job_d2a7eab4-9d0e-4e8c-953b-0296df2a175a/artifacts/k9nfafgu_ReSt%20Re%20-%202.png"
               alt="ReStore Logo"
-              className="h-[140px] w-auto transition-transform duration-300 hover:scale-105 object-cover"
-              style={{
-                clipPath: 'inset(10px 20px 10px 20px)',
-                transform: 'scale(1.2)',
-                transformOrigin: 'left center'
-              }}
+              className="h-[140px] w-auto transition-transform duration-300 hover:scale-105"
             />
           </Link>
 
