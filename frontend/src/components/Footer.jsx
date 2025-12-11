@@ -25,11 +25,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 items-start">
           {/* Contact Info */}
           <div>
-            <img
-              src="https://customer-assets.emergentagant.com/job_d2a7eab4-9d0e-4e8c-953b-0296df2a175a/artifacts/k9nfafgu_ReSt%20Re%20-%202.png"
-              alt="ReStore Logo"
-              className="h-[140px] w-auto mb-4"
-            />
+            <h3 className="text-xl font-bold mb-4">ReStore</h3>
             <p className="text-gray-400 mb-4">
               Réparation, reconditionnement et vente de téléphones, ordinateurs, tablettes et consoles.
             </p>
