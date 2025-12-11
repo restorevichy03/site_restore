@@ -208,6 +208,61 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Tracking & Online Quote Section */}
+      <section className="py-16 bg-gradient-to-br from-[#0097b2] to-[#007a8f] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Devis en ligne */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+              <div className="flex items-start space-x-4">
+                <div className="bg-white/20 p-4 rounded-xl">
+                  <FileText size={32} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Devis en ligne gratuit</h3>
+                  <p className="text-white/90 mb-6 leading-relaxed">
+                    Obtenez votre devis instantané en quelques clics. Choisissez votre appareil, décrivez le problème et recevez une estimation immédiate.
+                  </p>
+                  <a
+                    href="https://fr.phonilab.app/generate-ticket-steps/restore-phone-03"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-white text-[#0097b2] hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105">
+                      Faire un devis
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Suivi de réparation */}
+            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+              <div className="flex items-start space-x-4">
+                <div className="bg-white/20 p-4 rounded-xl">
+                  <Search size={32} className="text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3">Suivre ma réparation</h3>
+                  <p className="text-white/90 mb-6 leading-relaxed">
+                    Suivez l'état d'avancement de votre réparation en temps réel. Saisissez votre numéro de ticket pour consulter le statut.
+                  </p>
+                  <a
+                    href="https://fr.phonilab.app/index.php?slug=restore-phone-03"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-white text-[#0097b2] hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105">
+                      Suivre mon appareil
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why ReStore Section */}
       <section id="why-restore" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
