@@ -54,7 +54,7 @@ const Home = () => {
       icon: Recycle,
       title: 'Rachat & Recyclage',
       description: 'Donnez une seconde vie à vos appareils. Nous rachetons et recyclons votre matériel.',
-      image: 'https://images.unsplash.com/photo-1673654885024-986fb87080f3',
+      image: 'https://images.pexels.com/photos/6802049/pexels-photo-6802049.jpeg',
     },
     {
       icon: Package,
