@@ -22,18 +22,13 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 items-start">
           {/* Contact Info */}
           <div>
             <img
-              src="https://customer-assets.emergentagent.com/job_d2a7eab4-9d0e-4e8c-953b-0296df2a175a/artifacts/k9nfafgu_ReSt%20Re%20-%202.png"
+              src="https://customer-assets.emergentagant.com/job_d2a7eab4-9d0e-4e8c-953b-0296df2a175a/artifacts/k9nfafgu_ReSt%20Re%20-%202.png"
               alt="ReStore Logo"
-              className="h-[140px] w-auto mb-4 object-cover"
-              style={{
-                clipPath: 'inset(10px 20px 10px 20px)',
-                transform: 'scale(1.2)',
-                transformOrigin: 'left center'
-              }}
+              className="h-[140px] w-auto mb-4"
             />
             <p className="text-gray-400 mb-4">
               Réparation, reconditionnement et vente de téléphones, ordinateurs, tablettes et consoles.
