@@ -91,7 +91,7 @@ const Home = () => {
     {
       icon: Shield,
       title: 'Microsoudure Expert',
-      description: 'Atelier de microsoudure à Saint-Étienne pour les réparations complexes et précises.',
+      description: 'Dans notre atelier de Saint-Étienne, nous effectuons nous-mêmes toutes les réparations complexes nécessitant une microsoudure experte.',
     },
     {
       icon: Leaf,
