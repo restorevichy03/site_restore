@@ -106,7 +106,7 @@ const Footer = () => {
                 <Facebook size={24} />
               </a>
               <a
-                href="https://www.tiktok.com/@restore_vichy"
+                href="https://www.tiktok.com/@restore03200"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 p-3 rounded-full hover:bg-[#0097b2] transition-all duration-300 hover:scale-110"
