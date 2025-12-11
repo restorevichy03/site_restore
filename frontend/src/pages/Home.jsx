@@ -22,7 +22,7 @@ const Home = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Validation frontend
@@ -36,9 +36,18 @@ const Home = () => {
       return;
     }
 
-    // Simulate form submission
-    toast.success('Votre message a été envoyé avec succès ! Nous vous recontacterons rapidement.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    try {
+      // Envoyer au backend
+      const response = await axios.post(`${API}/contact`, formData);
+      
+      if (response.status === 200) {
+        toast.success('Votre message a été envoyé avec succès ! Nous vous recontacterons rapidement.');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi du message:', error);
+      toast.error('Une erreur est survenue. Veuillez réessayer ou nous appeler directement.');
+    }
   };
 
   const services = [
