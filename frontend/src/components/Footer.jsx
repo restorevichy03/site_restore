@@ -69,7 +69,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center">
               <Clock size={22} className="mr-2 text-[#95F4D7]" />
-              Horaires d'ouverture
+              Horaires d&apos;ouverture
             </h3>
             <div className="space-y-2">
               {openingHours.map((item, index) => (
