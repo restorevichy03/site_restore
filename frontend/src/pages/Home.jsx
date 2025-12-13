@@ -390,6 +390,18 @@ const Home = () => {
                 >
                   Envoyer le message
                 </Button>
+                <p className="text-sm text-gray-600 text-center mt-4">
+                  Les informations transmises via ce formulaire sont utilisées uniquement pour répondre à votre demande. 
+                  Pour en savoir plus, consultez notre{' '}
+                  <a 
+                    href="/politique-confidentialite" 
+                    className="text-[#0097b2] hover:underline font-semibold"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    politique de confidentialité
+                  </a>.
+                </p>
               </form>
             </div>
 
