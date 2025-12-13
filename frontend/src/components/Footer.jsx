@@ -108,10 +108,10 @@ const Footer = () => {
             <div className="mt-6">
               <h4 className="text-sm font-semibold mb-2 text-gray-400">Liens utiles</h4>
               <div className="space-y-2 text-sm">
-                <a href="#" className="block text-gray-400 hover:text-[#95F4D7] transition-colors duration-200">
+                <a href="/mentions-legales" className="block text-gray-400 hover:text-[#95F4D7] transition-colors duration-200">
                   Mentions légales
                 </a>
-                <a href="#" className="block text-gray-400 hover:text-[#95F4D7] transition-colors duration-200">
+                <a href="/politique-confidentialite" className="block text-gray-400 hover:text-[#95F4D7] transition-colors duration-200">
                   Politique de confidentialité
                 </a>
               </div>
