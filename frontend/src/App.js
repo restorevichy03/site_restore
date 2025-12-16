@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import Admin from './pages/Admin';
 import MentionsLegales from './pages/MentionsLegales';
 import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
-import EnvoiAppareil from './pages/EnvoiAppareil';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
           <Route path="/admin" element={<Admin />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
-          <Route path="/envoi-appareil" element={<EnvoiAppareil />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-center" richColors />
