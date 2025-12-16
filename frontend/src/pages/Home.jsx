@@ -224,27 +224,7 @@ const Home = () => {
       {/* Tracking & Online Quote Section */}
       <section className="py-16 bg-gradient-to-br from-[#0097b2] to-[#007a8f] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Envoi par courrier */}
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
-              <div className="flex items-start space-x-4">
-                <div className="bg-white/20 p-4 rounded-xl">
-                  <Package size={32} className="text-white" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">Envoyez votre appareil</h3>
-                  <p className="text-white/90 mb-6 leading-relaxed">
-                    Envoyez-nous votre appareil, nous le réparons et vous le renvoyons rapidement. Service simple et sécurisé.
-                  </p>
-                  <a href="/envoi-appareil">
-                    <Button className="bg-white text-[#0097b2] hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105">
-                      Envoyer mon appareil
-                    </Button>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Devis en ligne */}
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
               <div className="flex items-start space-x-4">
