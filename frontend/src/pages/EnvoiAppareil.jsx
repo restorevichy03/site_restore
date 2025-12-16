@@ -370,10 +370,6 @@ const EnvoiAppareil = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle size={20} className="text-green-600 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Incluez le chargeur et les accessoires nécessaires</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle size={20} className="text-green-600 mr-3 mt-0.5 flex-shrink-0" />
                     <span>Notez votre code d'accès si besoin pour les tests</span>
                   </li>
                   <li className="flex items-start">
