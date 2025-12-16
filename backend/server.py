@@ -123,6 +123,26 @@ async def get_contact_message(message_id: str):
         raise HTTPException(status_code=404, detail="Message not found")
     return ContactMessage(**message)
 
+# Envoi Appareil Routes
+@api_router.post("/envoi-appareil", response_model=EnvoiAppareil)
+async def create_envoi_appareil(input: EnvoiAppareilCreate):
+    envoi_dict = input.dict()
+    envoi_obj = EnvoiAppareil(**envoi_dict)
+    await db.envoi_appareils.insert_one(envoi_obj.dict())
+    return envoi_obj
+
+@api_router.get("/envoi-appareil", response_model=List[EnvoiAppareil])
+async def get_envoi_appareils():
+    envois = await db.envoi_appareils.find().sort("timestamp", -1).to_list(1000)
+    return [EnvoiAppareil(**envoi) for envoi in envois]
+
+@api_router.get("/envoi-appareil/{envoi_id}", response_model=EnvoiAppareil)
+async def get_envoi_appareil(envoi_id: str):
+    envoi = await db.envoi_appareils.find_one({"id": envoi_id})
+    if not envoi:
+        raise HTTPException(status_code=404, detail="Envoi not found")
+    return EnvoiAppareil(**envoi)
+
 # Include the router in the main app
 app.include_router(api_router)
 
