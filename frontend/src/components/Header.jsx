@@ -19,7 +19,6 @@ const Header = () => {
     { name: 'Accueil', to: 'hero' },
     { name: 'Services', to: 'services' },
     { name: 'Pourquoi ReStore', to: 'why-restore' },
-    { name: 'Envoyez votre appareil', to: 'envoi', external: true, url: '/envoi-appareil' },
     { name: 'Devis en ligne', to: 'devis', external: true, url: 'https://fr.phonilab.app/generate-ticket-steps/restore-phone-03' },
     { name: 'Contact', to: 'contact' },
   ];
