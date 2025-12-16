@@ -232,7 +232,7 @@ const Home = () => {
                   <Package size={32} className="text-white" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3">Envoi par courrier</h3>
+                  <h3 className="text-2xl font-bold mb-3">Envoyez votre appareil</h3>
                   <p className="text-white/90 mb-6 leading-relaxed">
                     Envoyez-nous votre appareil, nous le réparons et vous le renvoyons rapidement. Service simple et sécurisé.
                   </p>
