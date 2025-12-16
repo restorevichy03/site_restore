@@ -387,7 +387,7 @@ const EnvoiAppareil = () => {
                 </div>
                 <div className="space-y-3 text-gray-700">
                   <p><strong>Diagnostic :</strong> 24-48h après réception</p>
-                  <p><strong>Réparation :</strong> 2-5 jours ouvrés</p>
+                  <p><strong>Réparation :</strong> 2 jours</p>
                   <p><strong>Retour :</strong> 2-3 jours par Colissimo</p>
                 </div>
               </div>
