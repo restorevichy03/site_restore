@@ -402,7 +402,7 @@ const EnvoiAppareil = () => {
                   <li>✓ Diagnostic gratuit</li>
                   <li>✓ Devis avant réparation</li>
                   <li>✓ Pièces de qualité premium</li>
-                  <li>✓ Garantie 6 mois</li>
+                  <li>✓ Garantie 1 an</li>
                   <li>✓ Assurance colis recommandée</li>
                 </ul>
               </div>
