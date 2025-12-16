@@ -52,6 +52,35 @@ class ContactMessageCreate(BaseModel):
     phone: str
     message: str
 
+class EnvoiAppareil(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    deviceType: str
+    brand: str
+    model: str
+    problem: str
+    name: str
+    email: str
+    phone: str
+    address: str
+    postalCode: str
+    city: str
+    additionalInfo: str = ""
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    status: str = "new"  # new, received, in_progress, repaired, sent_back
+
+class EnvoiAppareilCreate(BaseModel):
+    deviceType: str
+    brand: str
+    model: str
+    problem: str
+    name: str
+    email: str
+    phone: str
+    address: str
+    postalCode: str
+    city: str
+    additionalInfo: str = ""
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
