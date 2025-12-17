@@ -200,4 +200,3 @@ Pour toute question ou assistance :
 
 ---
 
-Développé avec ❤️ par [Emergent](https://emergent.sh)
